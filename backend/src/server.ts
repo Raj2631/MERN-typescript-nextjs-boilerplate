@@ -1,5 +1,4 @@
 import express from 'express';
-console.log('asf');
 const app = express();
 
 app.get('/', (req, res) => {

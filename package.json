@@ -23,8 +23,8 @@
     "typescript": "^4.1.5"
   },
   "scripts": {
-    "start": "node dist/server.js",
-    "server": "cd backend/src && nodemon server",
+    "start": "cd backend/dist && node server.js",
+    "server": "cd backend/src && nodemon server.ts",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "tsc -p ."
